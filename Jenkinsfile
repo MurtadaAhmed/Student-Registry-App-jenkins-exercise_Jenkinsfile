@@ -7,5 +7,10 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('NPM Test') {
+            steps {
+                bat 'npm test'
+            }
+        }
     }
 }
